@@ -1,5 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Beiruti, Bebas_Neue } from "next/font/google";
 import "./globals.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +11,14 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const beiruti = Beiruti({
+  variable: "--font-beiruti", // กำหนดตัวแปร CSS
+  subsets: ["latin"],
+  weight: ["400", "700"], // ใส่เฉพาะน้ำหนักฟอนต์ที่ต้องการ
+});
+
+
 
 export const metadata = {
   title: "Create Next App",
